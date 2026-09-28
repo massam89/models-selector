@@ -3,6 +3,18 @@
   "version": "0.1.1",
   "license": "MIT",
   "description": "Choose coding models by task and refresh public provider data.",
+  "keywords": [
+    "ai",
+    "coding",
+    "llm",
+    "models",
+    "model-recommendation",
+    "model-selector",
+    "model-catalog",
+    "developer-tools",
+    "cli",
+    "nodejs"
+  ],
   "type": "module",
   "bin": {
     "models-selector": "./src/cli.js"
