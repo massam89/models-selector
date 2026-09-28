@@ -1,6 +1,7 @@
 {
   "name": "models-selector",
   "version": "0.1.0",
+  "license": "MIT",
   "description": "Choose coding models by task and refresh public provider data.",
   "type": "module",
   "bin": {
@@ -9,7 +10,8 @@
   "files": [
     "src/",
     "data/",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "start": "node src/cli.js",
