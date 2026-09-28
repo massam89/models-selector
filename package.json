@@ -1,0 +1,21 @@
+{
+  "name": "models-selector",
+  "version": "0.1.0",
+  "description": "Choose coding models by task and refresh public provider data.",
+  "type": "module",
+  "bin": {
+    "model-selector": "./src/cli.js"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

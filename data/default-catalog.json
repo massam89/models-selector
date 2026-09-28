@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "providers": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI",
+      "catalogEndpoint": "https://developers.openai.com/api/docs/models.md",
+      "pricingSource": "https://developers.openai.com/api/docs/pricing"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Anthropic",
+      "catalogEndpoint": "https://platform.claude.com/docs/en/models/overview.md",
+      "pricingSource": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    {
+      "id": "google",
+      "displayName": "Google Gemini",
+      "catalogEndpoint": "https://ai.google.dev/gemini-api/docs/models.md",
+      "pricingSource": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "id": "kimi",
+      "displayName": "Kimi (Moonshot AI)",
+      "catalogEndpoint": "https://platform.kimi.ai/docs/models.md",
+      "pricingSource": "https://platform.kimi.ai/docs/pricing/chat"
+    },
+    {
+      "id": "deepseek",
+      "displayName": "DeepSeek",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    },
+    {
+      "id": "mistral",
+      "displayName": "Mistral AI",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI (Grok)",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    },
+    {
+      "id": "cohere",
+      "displayName": "Cohere",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    },
+    {
+      "id": "meta-llama",
+      "displayName": "Meta Llama",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    },
+    {
+      "id": "qwen",
+      "displayName": "Qwen",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    },
+    {
+      "id": "minimax",
+      "displayName": "MiniMax",
+      "catalogEndpoint": "https://openrouter.ai/api/v1/models?output_modalities=text",
+      "pricingSource": "https://openrouter.ai/models"
+    }
+  ],
+  "categories": [
+    {
+      "id": "simple-question",
+      "label": "Simple coding question",
+      "description": "Answer a focused programming question or explain a small concept.",
+      "capabilityTags": ["code-explanation"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "complex-reasoning",
+      "label": "Complex coding or architecture",
+      "description": "Work through a difficult implementation, design, or tradeoff.",
+      "capabilityTags": ["code-generation", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "feature-implementation",
+      "label": "Feature implementation",
+      "description": "Build new functionality from requirements or a feature request.",
+      "capabilityTags": ["code-generation", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "debugging-easy",
+      "label": "Easy debugging",
+      "description": "Find and fix a localized, straightforward defect.",
+      "capabilityTags": ["debugging"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "debugging-hard",
+      "label": "Hard debugging",
+      "description": "Investigate a difficult or multi-part failure.",
+      "capabilityTags": ["debugging", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "performance-optimization",
+      "label": "Performance optimization",
+      "description": "Find bottlenecks and improve runtime, memory, or resource use.",
+      "capabilityTags": ["performance-analysis", "code-generation", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "refactoring-easy",
+      "label": "Easy refactoring",
+      "description": "Improve a small piece of code without changing its behavior.",
+      "capabilityTags": ["refactoring"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "refactoring-complex",
+      "label": "Complex refactoring",
+      "description": "Restructure a larger or tightly coupled part of a codebase.",
+      "capabilityTags": ["refactoring", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "dependency-migration",
+      "label": "Dependency upgrade or migration",
+      "description": "Upgrade dependencies, frameworks, or runtimes while preserving behavior.",
+      "capabilityTags": ["compatibility-analysis", "code-generation", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "test-generation",
+      "label": "Test writing",
+      "description": "Create or improve automated tests.",
+      "capabilityTags": ["test-generation"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "code-review",
+      "label": "Code review",
+      "description": "Review code for defects, risks, and maintainability.",
+      "capabilityTags": ["code-review", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "security-review",
+      "label": "Security review",
+      "description": "Look for vulnerabilities and recommend safe code changes.",
+      "capabilityTags": ["security-analysis", "code-review", "reasoning"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "api-integration",
+      "label": "API and service integration",
+      "description": "Connect an application to APIs, SDKs, or external services.",
+      "capabilityTags": ["api-integration", "code-generation", "debugging"],
+      "suggestedSettings": {},
+      "provisional": false
+    },
+    {
+      "id": "documentation",
+      "label": "Documentation",
+      "description": "Write or improve technical documentation.",
+      "capabilityTags": ["documentation"],
+      "suggestedSettings": {},
+      "provisional": false
+    }
+  ],
+  "models": [
+    {
+      "providerId": "openai",
+      "providerModelId": "gpt-6-astra",
+      "displayName": "GPT-6 Astra",
+      "availability": "available",
+      "capabilities": {
+        "code-explanation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "code-generation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "debugging": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "refactoring": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "test-generation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "code-review": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "documentation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "reasoning": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" }
+      },
+      "supportedSettings": {},
+      "pricing": [
+        {
+          "component": "input",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "conditions": { "tier": "standard", "context": "short" },
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "component": "output",
+          "amount": 50,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "conditions": { "tier": "standard", "context": "short" },
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "source": "Curated seed profile",
+      "lastChecked": "2026-09-27"
+    },
+    {
+      "providerId": "openai",
+      "providerModelId": "gpt-6-sol",
+      "displayName": "GPT-6 Sol",
+      "availability": "available",
+      "capabilities": {
+        "code-explanation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "code-generation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "debugging": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "refactoring": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "test-generation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "code-review": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "documentation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "reasoning": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" }
+      },
+      "supportedSettings": {},
+      "pricing": [
+        {
+          "component": "input",
+          "amount": 2,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "conditions": { "tier": "standard", "context": "short" },
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "component": "output",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "conditions": { "tier": "standard", "context": "short" },
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "source": "Curated seed profile",
+      "lastChecked": "2026-09-27"
+    },
+    {
+      "providerId": "openai",
+      "providerModelId": "gpt-6-luna",
+      "displayName": "GPT-6 Luna",
+      "availability": "available",
+      "capabilities": {
+        "code-explanation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "code-generation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "debugging": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "refactoring": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "test-generation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "code-review": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" },
+        "documentation": { "support": "supported", "source": "Curated seed profile", "lastChecked": "2026-09-27" }
+      },
+      "supportedSettings": {},
+      "pricing": [
+        {
+          "component": "input",
+          "amount": 0.1,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "conditions": { "tier": "standard", "context": "short" },
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "component": "output",
+          "amount": 0.5,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "conditions": { "tier": "standard", "context": "short" },
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "source": "Curated seed profile",
+      "lastChecked": "2026-09-27"
+    },
+    {
+      "providerId": "anthropic",
+      "providerModelId": "claude-sonnet-5",
+      "displayName": "Claude Sonnet 5",
+      "availability": "available",
+      "capabilities": {
+        "code-generation": { "support": "supported", "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview", "lastChecked": "2026-09-27" },
+        "reasoning": { "support": "supported", "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview", "lastChecked": "2026-09-27" }
+      },
+      "supportedSettings": {
+        "temperature": { "supported": false, "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview" },
+        "reasoningEffort": { "supported": true, "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview" }
+      },
+      "pricing": [
+        {
+          "component": "input",
+          "amount": 2,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "component": "output",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "per-1m-tokens",
+          "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+      "lastChecked": "2026-09-27"
+    },
+    {
+      "providerId": "google",
+      "providerModelId": "gemini-2.5-pro",
+      "displayName": "Gemini 2.5 Pro",
+      "availability": "available",
+      "capabilities": {
+        "code-generation": { "support": "supported", "source": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro", "lastChecked": "2026-09-27" },
+        "reasoning": { "support": "supported", "source": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro", "lastChecked": "2026-09-27" }
+      },
+      "supportedSettings": {},
+      "pricing": [],
+      "source": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro",
+      "lastChecked": "2026-09-27"
+    },
+    {
+      "providerId": "google",
+      "providerModelId": "gemini-2.5-flash",
+      "displayName": "Gemini 2.5 Flash",
+      "availability": "available",
+      "capabilities": {
+        "reasoning": { "support": "supported", "source": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash", "lastChecked": "2026-09-27" }
+      },
+      "supportedSettings": {},
+      "pricing": [],
+      "source": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
+      "lastChecked": "2026-09-27"
+    }
+  ]
+}
