@@ -19,7 +19,7 @@ After the package is published, install it globally from npm:
 npm install --global models-selector
 ```
 
-Open a new terminal session, then run `model-selector` from any directory.
+Open a new terminal session, then run `models-selector` from any directory.
 
 To install directly from a local checkout instead, open a terminal in the project
 root and run:
@@ -34,14 +34,14 @@ installing a particular checkout.
 ## Troubleshooting
 
 Install Node.js 22 or newer and npm before installing Model Selector. If the
-`model-selector` command is not found after installation, open a new terminal and
+`models-selector` command is not found after installation, open a new terminal and
 check the global npm prefix with `npm prefix --global`. The global executable
 directory is the prefix itself on Windows and its `bin` subdirectory on
 Unix-like systems; that directory must be on `PATH`.
 
-To check which command your terminal will run, use `Get-Command model-selector`
-in PowerShell, `where.exe model-selector` in Command Prompt, or
-`command -v model-selector` in a POSIX shell. If another program with the same
+To check which command your terminal will run, use `Get-Command models-selector`
+in PowerShell, `where.exe models-selector` in Command Prompt, or
+`command -v models-selector` in a POSIX shell. If another program with the same
 name is found first, resolve the command-name or `PATH` conflict. When started
 with an outdated Node.js runtime, Model Selector reports the detected version
 and directs you to install a supported version.

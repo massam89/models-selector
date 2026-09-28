@@ -6,7 +6,7 @@
 
 ## Summary
 
-Expose the existing Model Selector entry point as the globally available `model-selector` command in the `models-selector` npm package. Support global installation from the npm registry after publication and from local project files as an alternative; no platform-specific installer is in scope. Keep the existing Node.js CLI, packaged catalog, per-user state, interactive menu, and recommendation/refresh behavior intact, and document installation prerequisites and PATH recovery.
+Expose the existing Model Selector entry point as the globally available `models-selector` command in the `models-selector` npm package. Support global installation from the npm registry after publication and from local project files as an alternative; no platform-specific installer is in scope. Keep the existing Node.js CLI, packaged catalog, per-user state, interactive menu, and recommendation/refresh behavior intact, and document installation prerequisites and PATH recovery.
 
 ## Technical Context
 
@@ -70,9 +70,9 @@ tests/
 └── unit/
 ```
 
-**Structure Decision**: Keep the existing single-project layout. Name the npm package `models-selector` and register `src/cli.js` as its `model-selector` executable, retaining the Node shebang and package inclusion of `src/`, `data/`, and `README.md`. The CLI already resolves its default catalog relative to its own module and stores runtime state in the user's platform-specific configuration directory; those paths must remain independent of the caller's working directory.
+**Structure Decision**: Keep the existing single-project layout. Name the npm package and executable `models-selector`, mapping the command to `src/cli.js`, retaining the Node shebang and package inclusion of `src/`, `data/`, and `README.md`. The CLI already resolves its default catalog relative to its own module and stores runtime state in the user's platform-specific configuration directory; those paths must remain independent of the caller's working directory.
 
-The existing invalid-argument message refers to `npm start`; update it and its test guidance to name `model-selector` so users receive instructions that match the global command.
+The existing invalid-argument message refers to `npm start`; update it and its test guidance to name `models-selector` so users receive instructions that match the global command.
 
 ## Complexity Tracking
 

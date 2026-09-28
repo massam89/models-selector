@@ -5,17 +5,17 @@
 - The machine must have Node.js `>=22` and npm installed.
 - After publication, users install globally with `npm install --global models-selector`.
 - Users may install from the project root with `npm install --global .`, or supply another local project path.
-- The installed package is named `models-selector`; its `bin` mapping exposes the `model-selector` command.
+- The installed package and its `bin`-mapped executable are both named `models-selector`.
 - The npm global executable directory must be on the user's `PATH`. It is `{prefix}/bin` on Unix-like systems and `{prefix}` on Windows.
 
 ## Invocation
 
 ```text
-model-selector
+models-selector
 ```
 
 - No arguments are required or accepted; the existing interactive menu remains the user interface.
-- If arguments are supplied, the command rejects them and directs the user to launch `model-selector` without arguments.
+- If arguments are supplied, the command rejects them and directs the user to launch `models-selector` without arguments.
 - The command must start from the project directory or any unrelated working directory.
 - The command displays the existing Model Selector menu and retains the recommendation and provider-refresh actions.
 - The default catalog is read from the installed package. Existing mutable state continues to be read from and written to the user's platform-specific configuration directory.

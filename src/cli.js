@@ -132,7 +132,7 @@ async function refreshAllProviders(catalog, state, deps) {
 }
 
 async function dispatch(argv, deps) {
-  if (argv.length) throw new Error("Run model-selector without arguments and choose an option from the menu.");
+  if (argv.length) throw new Error("Run models-selector without arguments and choose an option from the menu.");
   const loaded = deps.catalog
     ? { catalog: deps.catalog, state: deps.state ?? { snapshots: {}, overrides: [], customModels: [] } }
     : await loadCatalog({ defaultCatalogPath: deps.defaultCatalogPath, configDir: deps.configDir });

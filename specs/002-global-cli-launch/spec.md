@@ -6,7 +6,7 @@
 
 **Status**: Draft
 
-**Input**: User description: Make the existing Model Selector available by typing `model-selector` from any terminal, instead of starting it from its project folder. Users should be able to install it globally through the project's existing runtime/package ecosystem on operating systems supported by that runtime.
+**Input**: User description: Make the existing Model Selector available by typing `models-selector` from any terminal, instead of starting it from its project folder. Users should be able to install it globally through the project's existing runtime/package ecosystem on operating systems supported by that runtime.
 
 ## Clarifications
 
@@ -18,16 +18,16 @@
 
 ### User Story 1 - Launch from any terminal (Priority: P1)
 
-As a Model Selector user, I want to install the published npm package globally (or install from a local project checkout) and run `model-selector` from any terminal and working directory, so I can use it without finding or entering the project folder.
+As a Model Selector user, I want to install the published npm package globally (or install from a local project checkout) and run `models-selector` from any terminal and working directory, so I can use it without finding or entering the project folder.
 
 **Why this priority**: Direct command-line access is the primary value of the feature.
 
-**Independent Test**: Install the app on a supported system, open a fresh terminal in a directory outside the project, run `model-selector`, and verify that the existing main menu appears.
+**Independent Test**: Install the app on a supported system, open a fresh terminal in a directory outside the project, run `models-selector`, and verify that the existing main menu appears.
 
 **Acceptance Scenarios**:
 
-1. **Given** the app is installed on a supported system, **When** the user opens a terminal in an unrelated directory and runs `model-selector`, **Then** the app starts and displays its existing main menu.
-2. **Given** the app is installed, **When** the user runs `model-selector` from the project directory or another terminal session, **Then** the same application starts without requiring a project path or a change to the current directory.
+1. **Given** the app is installed on a supported system, **When** the user opens a terminal in an unrelated directory and runs `models-selector`, **Then** the app starts and displays its existing main menu.
+2. **Given** the app is installed, **When** the user runs `models-selector` from the project directory or another terminal session, **Then** the same application starts without requiring a project path or a change to the current directory.
 3. **Given** the user follows the npm-package or local-checkout installation instructions on a supported system, **When** installation completes, **Then** the command is available in a newly opened terminal.
 
 ### User Story 2 - Use existing selector workflows (Priority: P2)
@@ -36,11 +36,11 @@ As a Model Selector user, I want the globally launched app to retain its existin
 
 **Why this priority**: Global access is useful only if it opens the same working product.
 
-**Independent Test**: Launch the app using `model-selector`, select each existing main-menu option, and verify the recommendation and refresh flows remain available.
+**Independent Test**: Launch the app using `models-selector`, select each existing main-menu option, and verify the recommendation and refresh flows remain available.
 
 **Acceptance Scenarios**:
 
-1. **Given** the user launches the app with `model-selector`, **When** the main menu appears, **Then** the user can choose either model recommendations or provider refresh as before.
+1. **Given** the user launches the app with `models-selector`, **When** the main menu appears, **Then** the user can choose either model recommendations or provider refresh as before.
 2. **Given** the user starts the app outside the project directory, **When** the user completes either existing workflow, **Then** the app uses its required catalog data and reports outcomes as it does when started from the project directory.
 
 ### User Story 3 - Resolve setup problems (Priority: P3)
@@ -55,7 +55,7 @@ As a user whose system is missing a prerequisite or cannot resolve the command, 
 
 1. **Given** a required runtime prerequisite is missing, **When** the user attempts to install or run the app, **Then** the user receives a clear message identifying the missing prerequisite and the next step.
 2. **Given** installation completes but the command is not available in the current terminal session, **When** the user follows the documented recovery guidance, **Then** the guidance explains how to make the command available in a new terminal session.
-3. **Given** another installed program already uses the `model-selector` command name, **When** the user attempts to install or run this app, **Then** the user receives guidance to identify and resolve the command-name conflict.
+3. **Given** another installed program already uses the `models-selector` command name, **When** the user attempts to install or run this app, **Then** the user receives guidance to identify and resolve the command-name conflict.
 
 ### Edge Cases
 
@@ -71,7 +71,7 @@ As a user whose system is missing a prerequisite or cannot resolve the command, 
 ### Functional Requirements
 
 - **FR-001**: The app MUST be installable globally through npm as the `models-selector` package after publication, and directly from local project files as an alternative.
-- **FR-002**: After installation, users MUST be able to launch the app by entering `model-selector` in any terminal session on an operating system supported by the existing runtime/package ecosystem.
+- **FR-002**: After installation, users MUST be able to launch the app by entering `models-selector` in any terminal session on an operating system supported by the existing runtime/package ecosystem.
 - **FR-003**: Launching the command MUST NOT require users to navigate to the project directory or provide a project path.
 - **FR-004**: The command MUST open the existing interactive main menu and preserve the current recommendation and provider-refresh workflows.
 - **FR-005**: The app MUST locate and use the data it needs when launched from outside the project directory.
@@ -82,7 +82,7 @@ As a user whose system is missing a prerequisite or cannot resolve the command, 
 ### Key Entities
 
 - **Global Installation**: An installation of the `models-selector` npm package or local checkout that makes its launch command available outside the project directory.
-- **Launch Command**: The `model-selector` command that starts the existing interactive application.
+- **Launch Command**: The `models-selector` command that starts the existing interactive application.
 - **Supported Environment**: A machine, terminal session, and operating system meeting the existing runtime/package ecosystem's prerequisites.
 
 ## Success Criteria *(mandatory)*
@@ -90,8 +90,8 @@ As a user whose system is missing a prerequisite or cannot resolve the command, 
 ### Measurable Outcomes
 
 - **SC-001**: At least 90% of first-time test users can follow the installation guidance and reach the existing main menu within five minutes on a supported system.
-- **SC-002**: In 100% of supported operating-system test runs, users can start the app with `model-selector` from the project directory, an unrelated directory, and a newly opened terminal.
-- **SC-003**: 100% of existing main-menu workflows remain available when the app is launched with `model-selector`.
+- **SC-002**: In 100% of supported operating-system test runs, users can start the app with `models-selector` from the project directory, an unrelated directory, and a newly opened terminal.
+- **SC-003**: 100% of existing main-menu workflows remain available when the app is launched with `models-selector`.
 - **SC-004**: In 100% of tested missing-prerequisite and unsupported-environment cases, users receive an accurate explanation and a practical next step.
 
 ## Assumptions

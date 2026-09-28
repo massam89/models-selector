@@ -26,13 +26,13 @@ No foundational tasks are required.
 
 ## Phase 3: User Story 1 - Launch from any terminal (Priority: P1) 🎯 MVP
 
-**Goal**: Install the `models-selector` npm package or a local checkout and start the existing app with `model-selector` from any terminal working directory.
+**Goal**: Install the `models-selector` npm package or a local checkout and start the existing app with `models-selector` from any terminal working directory.
 
-**Independent Test**: Install from the project files on a supported machine, open a new terminal in a directory outside the project, run `model-selector`, and verify that the existing main menu appears.
+**Independent Test**: Install from the project files on a supported machine, open a new terminal in a directory outside the project, run `models-selector`, and verify that the existing main menu appears.
 
 ### Implementation
 
-- [X] T001 [P] [US1] Set the npm package name to `models-selector` and retain `model-selector` as the `./src/cli.js` executable in `package.json`, preserving the Node.js engine requirement and included source/data files.
+- [X] T001 [P] [US1] Set the npm package name and executable command to `models-selector` in `package.json`, preserving the Node.js engine requirement and included source/data files.
 - [X] T002 [P] [US1] Document global installation with `npm install --global models-selector` after publication and local-checkout installation with `npm install --global .`; explain prerequisites, launching from any working directory, and opening a new terminal.
 
 **Checkpoint**: The global command starts the existing menu from outside the project directory without publishing the package.
@@ -61,7 +61,7 @@ No foundational tasks are required.
 
 ### Implementation
 
-- [X] T004 [P] [US3] Add a Node.js version check to `src/cli.js` before showing the menu; report the detected version, Node.js 22 minimum, and an upgrade step, change invalid-argument guidance from `npm start` to `model-selector`, and recognize npm's symlinked entry path.
+- [X] T004 [P] [US3] Add a Node.js version check to `src/cli.js` before showing the menu; report the detected version, Node.js 22 minimum, and an upgrade step, change invalid-argument guidance from `npm start` to `models-selector`, and recognize npm's symlinked entry path.
 - [X] T005 [P] [US3] Add troubleshooting guidance to `README.md` for missing/outdated Node.js or npm, the npm global prefix and platform-specific PATH location, new terminal sessions, and command-name conflicts.
 
 **Checkpoint**: Runtime and command-resolution failures provide actionable guidance without appearing to launch successfully.
@@ -72,7 +72,7 @@ No foundational tasks are required.
 
 **Purpose**: Confirm package contents, existing behavior, and end-to-end global launch.
 
-- [X] T006 Add a cross-platform local npm global-install smoke test in `tests/integration/global-install.test.js`; invoke `model-selector` by name from an unrelated working directory and verify the menu and a recommendation appear.
+- [X] T006 Add a cross-platform local npm global-install smoke test in `tests/integration/global-install.test.js`; invoke `models-selector` by name from an unrelated working directory and verify the menu and a recommendation appear.
 - [ ] T007 Re-verify final package metadata and included assets with `npm pack --dry-run --json`, then run the existing `npm test` suite from the repository root.
 - [ ] T008 Follow `specs/002-global-cli-launch/quickstart.md` to install from npm (or local project files before publication) and launch from outside the project; verify the command, menu workflows, and documented recovery on each supported operating system.
 
@@ -126,7 +126,7 @@ T005: Add prerequisite and PATH troubleshooting in README.md.
 ### MVP First (User Story 1)
 
 1. Complete T001 and T002.
-2. Install from local project files and independently verify `model-selector` starts from an unrelated directory.
+2. Install from local project files and independently verify `models-selector` starts from an unrelated directory.
 3. Stop and validate this MVP before adding recovery polish.
 
 ### Incremental Delivery

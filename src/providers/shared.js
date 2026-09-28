@@ -1,5 +1,5 @@
 export const REQUEST_TIMEOUT_MS = 10_000;
-const USER_AGENT = "model-selector/0.1.0 (public catalog refresh)";
+const USER_AGENT = "models-selector/0.1.1 (public catalog refresh)";
 
 async function request(url, {
   providerName,

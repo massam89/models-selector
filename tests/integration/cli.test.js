@@ -34,6 +34,6 @@ test("app actions are selected in the menu rather than passed as commands", () =
   for (const command of ["refresh", "help", "--help", "catalog"]) {
     const result = spawnSync(process.execPath, [cli, command], { encoding: "utf8" });
     assert.notEqual(result.status, 0, command);
-    assert.match(result.stderr, /model-selector/);
+    assert.match(result.stderr, /models-selector/);
   }
 });

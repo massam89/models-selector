@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("globally installed command launches from an unrelated working directory", async (t) => {
-  const tempRoot = await mkdtemp(path.join(os.tmpdir(), "model-selector-global-"));
+  const tempRoot = await mkdtemp(path.join(os.tmpdir(), "models-selector-global-"));
   t.after(() => rm(tempRoot, { recursive: true, force: true }));
 
   const prefix = path.join(tempRoot, "prefix");
@@ -33,7 +33,7 @@ test("globally installed command launches from an unrelated working directory", 
     ...process.env,
     PATH: `${binDirectory}${path.delimiter}${process.env.PATH ?? ""}`
   };
-  const result = spawnSync("model-selector", [], {
+  const result = spawnSync("models-selector", [], {
     cwd: workingDirectory,
     env,
     input: "1\n1\n0\n0\n",

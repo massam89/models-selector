@@ -33,7 +33,7 @@ npm install --global .
 Open a new terminal session, change to a directory outside the project, and run:
 
 ```sh
-model-selector
+models-selector
 ```
 
 Expected: the existing Model Selector main menu appears with **1. Suggest models** and **2. Refresh models**. Choose **1. Suggest models** and a task category to confirm recommendations load from the installed package. Return to the menu and verify that **2. Refresh models** remains available.
@@ -57,4 +57,4 @@ npm prefix --global
 
 The runtime must be version 22 or newer. The global executable directory must be on `PATH`: on Windows this is the npm prefix itself; on Unix-like systems it is the `bin` directory under the prefix.
 
-To inspect command resolution, use `Get-Command model-selector` in PowerShell, `where.exe model-selector` in Command Prompt, or `command -v model-selector` in a POSIX shell. If another executable is found first, resolve the command-name or `PATH` conflict and open a new terminal session.
+To inspect command resolution, use `Get-Command models-selector` in PowerShell, `where.exe models-selector` in Command Prompt, or `command -v models-selector` in a POSIX shell. If another executable is found first, resolve the command-name or `PATH` conflict and open a new terminal session.

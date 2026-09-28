@@ -23,7 +23,7 @@ Represents the executable name exposed by the installed package.
 
 | Attribute | Description | Constraint |
 |---|---|---|
-| Name | `model-selector` | Executable name, distinct from the npm package name. |
+| Name | `models-selector` | Executable name, matching the npm package name. |
 | Entry point | Existing `src/cli.js` | Must retain its Node.js shebang and ESM behavior. |
 | Arguments | None | Existing menu-driven workflow remains the interface. |
 | Resolution | npm global executable directory | That directory must be available on the user's `PATH`. |
@@ -41,12 +41,12 @@ Represents the existing per-user catalog snapshots and overrides. It is not new 
 
 - Each Installed Package exposes one Launch Command.
 - The Launch Command loads the default catalog from files included with its Installed Package and reads or writes the current user's Runtime State.
-- The user installs `models-selector` from npm or installs a local checkout, then invokes `model-selector` from any working directory.
+- The user installs `models-selector` from npm or installs a local checkout, then invokes `models-selector` from any working directory.
 - Global installation and per-user state are machine-local; this feature does not synchronize either between machines.
 
 ## Validation Rules
 
-- The npm package name must be `models-selector`; its executable mapping must expose the exact command `model-selector`.
+- The npm package name and executable command must both be `models-selector`.
 - The command entry point must exist in the installed package and be executable by Node.js.
 - The package must include all source and data files needed for the menu and existing workflows.
 - The runtime requirement must remain Node.js `>=22`, with an actionable error for an older runtime.

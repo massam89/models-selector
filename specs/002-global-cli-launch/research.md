@@ -23,7 +23,7 @@
 
 ## Decision 2: Register the existing entry point with `bin`
 
-**Decision**: Add a `bin` mapping from the exact command name `model-selector` to `src/cli.js`. Keep the existing `#!/usr/bin/env node` shebang, ESM package type, and Node engine requirement.
+**Decision**: Add a `bin` mapping from the exact command name `models-selector` to `src/cli.js`. Keep the existing `#!/usr/bin/env node` shebang, ESM package type, and Node engine requirement.
 
 **Rationale**: npm uses package `bin` metadata to create the command link or shim. The current CLI already has the required shebang and resolves its packaged catalog relative to its own source file, so it can serve as the entry point without adding a separate wrapper.
 
