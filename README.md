@@ -25,7 +25,7 @@ To install directly from a local checkout instead, open a terminal in the projec
 root and run:
 
 ```sh
-npm install --global . 
+npm install --global .
 ```
 
 This local-source option is useful before the npm package is published or when
@@ -68,22 +68,22 @@ currently use OpenRouter.
 
 ## Categories
 
-| Task |
-|---|
-| Simple coding question |
-| Complex coding or architecture |
-| Feature implementation |
-| Easy debugging |
-| Hard debugging |
-| Performance optimization |
-| Easy refactoring |
-| Complex refactoring |
+| Task                            |
+| ------------------------------- |
+| Simple coding question          |
+| Complex coding or architecture  |
+| Feature implementation          |
+| Easy debugging                  |
+| Hard debugging                  |
+| Performance optimization        |
+| Easy refactoring                |
+| Complex refactoring             |
 | Dependency upgrade or migration |
-| Test writing |
-| Code review |
-| Security review |
-| API and service integration |
-| Documentation |
+| Test writing                    |
+| Code review                     |
+| Security review                 |
+| API and service integration     |
+| Documentation                   |
 
 ## Development
 
@@ -94,3 +94,5 @@ npm test
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+test repository
