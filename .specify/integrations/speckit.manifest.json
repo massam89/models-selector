@@ -3,6 +3,11 @@
   "version": "0.16.1",
   "installed_at": "2026-09-27T08:31:35.800529+00:00",
   "files": {
+    ".specify/scripts/bash/check-prerequisites.sh": "e346ca258985add88a0682e5f86670ce4c31ec14d1585df61264cf781b904eb8",
+    ".specify/scripts/bash/common.sh": "4c91956b31a2bc9c54729a3164e15b7e9b4dee386bcd4346dda23ed640f59a95",
+    ".specify/scripts/bash/create-new-feature.sh": "bda7e28fbb5e97da0855907e45435bc5110c0aa8de8c47b86dd82869e112b148",
+    ".specify/scripts/bash/setup-plan.sh": "8914caa51cf113c66c5099c2a657b36008f1d56eb3391fb27074450620b9fd3a",
+    ".specify/scripts/bash/setup-tasks.sh": "b87c7c6b87b6e81d1ffdbb97de8c63d25cda95759ea59afa4739fe4842d0301d",
     ".specify/scripts/powershell/check-prerequisites.ps1": "d7771e53f07d45b7b820e1659a41f58d570dd07d05ad47556abb3953023037f2",
     ".specify/scripts/powershell/common.ps1": "70d40e13eda801d4e89c337febbb7f4f6cdd18dac8dddcef645bb045c17eadb2",
     ".specify/scripts/powershell/create-new-feature.ps1": "dbc275bc999ebc0d7022f9725bf022674cf97a435fa57c32439d161b3e9844c1",
